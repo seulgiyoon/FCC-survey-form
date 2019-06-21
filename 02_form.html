@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Gothic+A1:400,700&display=swap" rel="stylesheet">
+    <link href="02_form.css" rel="stylesheet">
+    <title>NONOPLAY</title>
+</head>
+<body>
+    <div class="form-container">
+        <div class="popup-bg"></div>
+        <div class="popup"><img src="https://i.imgur.com/Lq8gNWD.png"></div>
+        <h1 id="title">노노플레이 참가 신청서</h1>
+        <p id="description">노노그램 애호가들의 축제에 함께해요!</p>
+        <form id="survey-form">
+            <div class="form-boxs">
+                <div class="boxset user-info">
+                    <p class="sub-description">참가자 기본 정보</p>
+                    <div class="left-side">
+                        <label id="name-label" for="name">이름 : </label>
+                    </div>
+                    <div class="right-side">
+                        <input autofocus class="input-field" type="text" name="name" id="name" placeholder="대회에서 사용할 이름" required>
+                    </div>
+                    <div class="left-side">
+                        <label id="email-label" for="email">메일주소 : </label>
+                    </div>
+                    <div class="right-side">
+                        <input class="input-field" type="email" name="email" id="email" placeholder="소식을 받을 메일주소" required>
+                    </div>
+                    <div class="left-side">
+                        <label id="number-label" for="number">나이 : </label>
+                    </div>
+                    <div class="right-side">
+                        <input class="input-field" type="number" name="age" id="number" placeholder="나이" min="1" max="150">
+                    </div>
+                </div>
+                <div class="boxset game-entry">
+                    <p class="sub-description">대회</p>
+                    <div class="left-side">
+                        <label id="game-entry-label" for="game-entry">참가 종목 : </label>
+                    </div>
+                    <div class="right-side">
+                        <ul>
+                        <li class="checkbox"><label><input id="game-entry" name="game-entry" value="1" type="checkbox"> 빨리 풀기 부문</label></li>
+                        <li class="checkbox"><label><input id="game-entry" name="game-entry" value="2" type="checkbox"> 많이 풀기 부문</label></li>
+                        <li class="checkbox"><label><input id="game-entry" name="game-entry" value="3" type="checkbox"> 오리지널 도안 부문</label></li>
+                        <li class="checkbox"><label><input id="game-entry" name="game-entry" value="4" type="checkbox"> 컬러링 부문</label></li>
+                        </ul>
+                    </div>
+                    <div class="left-side">
+                        <label id="afterparty-label" for="dropdown">애프터 파티 : </label>
+                    </div>
+                    <div class="right-side">
+                        <select id="dropdown" name="afterparty">
+                        <option value="yes">참가합니다</option>
+                        <option value="no">참가하지 않습니다</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="secondRowBoxes">
+                    <div class="boxset userBestTheme">
+                        <p class="sub-description">스타일</p>
+                        <div class="left-side">
+                            <label id="bestTheme-label" for="bestTheme">선호하는 테마 :</label>
+                        </div>
+                        <div class="right-side">
+                            <ul>
+                            <li class="radio"><label><input id="bestTheme" name="bestTheme" value="1" type="radio"> 풍경(도시, 자연 등)</label></li>
+                            <li class="radio"><label><input id="bestTheme" name="bestTheme" value="2" type="radio"> 동물(공룡 포함)</label></li>
+                            <li class="radio"><label><input id="bestTheme" name="bestTheme" value="3" type="radio"> 유명한 캐릭터</label></li>
+                            <li class="radio"><label><input id="bestTheme" name="bestTheme" value="4" type="radio"> 기타</label></li>
+                            <li class="radio radioText"><input id="bestTheme" name="bestTheme" type="text" class="input-field"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxset userTeam">
+                        <p class="sub-description">동호회</p>
+                        <div class="left-side">
+                            <label id="team-label" for="team">소속 동호회 :</label>
+                        </div>
+                        <div class="right-side">
+                            <ul>
+                            <li class="radio"><label><input id="team" name="team" value="1" type="radio"> 픽셀 인베이더</label></li>
+                            <li class="radio"><label><input id="team" name="team" value="2" type="radio"> 노노매니아</label></li>
+                            <li class="radio"><label><input id="team" name="team" value="3" type="radio"> 점쟁이</label></li>
+                            <li class="radio"><label><input id="team" name="team" value="3" type="radio"> 네로동</label></li>
+                            <li class="radio"><label><input id="team" name="team" value="5" type="radio"> 소속 없음</label></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="boxset userService">
+                        <p class="sub-description">서비스</p>
+                        <div class="left-side">
+                            <label id="babycare-label" for="babycare">탁아 서비스 :</label>
+                        </div>
+                        <div class="right-side">
+                            <select id="babycare" name="babycare">
+                                <option value="yes">신청합니다</option>
+                                <option value="no">신청하지 않습니다</option>
+                            </select>
+                        </div>
+                        <div class="left-side">
+                            <label id="lunchbox-label" for="lunchbox">점심 도시락 :</label>
+                        </div>
+                        <div class="right-side">
+                            <select id="lunchbox" name="lunchbox">
+                                <option value="yes">신청합니다</option>
+                                <option value="no">신청하지 않습니다</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxset userOpinion">
+                <p class="sub-description">기타 의견</p>
+                    <div class="left-side">
+                        <label id="opinion-label" for="opinion">문의사항 및 의견 :</label>
+                    </div>
+                    <div class="right-side">
+                        <textarea class="opinion" id="opinion" name="opinion"></textarea>
+                    </div>
+                </div>
+            </div>
+            <button id="submit" type="submit">제출하기</button>
+        </form>
+    </div>
+    <footer>NONOPLAY 2019</footer>
+</body>
+</html>

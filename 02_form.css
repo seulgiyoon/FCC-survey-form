@@ -1,0 +1,363 @@
+body {
+    text-align: center;
+    margin: 0;
+    padding-top: 110px;
+    background-size: 20px 20px;
+    background-image: 
+        linear-gradient(to right, #d5d5d5 1px, transparent 1px), 
+        linear-gradient(to bottom, #d5d5d5 1px, transparent 1px);
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+    color: #222;
+}
+
+/*팝업*/
+.popup {
+    position: absolute;
+    top: -60px;
+    left: -90px;
+    width: 200px;
+    height: 200px;
+    background-color : #fff;
+    text-align: center;
+    transform: rotate(15deg);
+}
+
+.popup:before, .popup:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+
+.popup:before {
+    transform: rotate(30deg);
+    background-color : #fff;
+}
+
+.popup:after {
+    transform: rotate(60deg);
+    background-color : #fff;
+}
+
+/*팝업-이미지*/
+.popup img {
+    max-width: 88%;
+    transform: translateY(38%) rotate(-15deg);
+}
+
+/*팝업-그림자*/
+.popup-bg {
+    position: absolute;
+    top: -60px;
+    left: -90px;
+    width: 200px;
+    height: 200px;
+    background-color : #fff;
+    box-shadow: 0px 0px 5px #000;
+    transform: rotate(15deg);
+}
+
+.popup-bg:before, .popup-bg:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color : #fff;
+    box-shadow: 0px 0px 6px #000;
+}
+
+.popup-bg:before {
+    transform: rotate(60deg);
+}
+
+.popup-bg:after {
+    transform: rotate(30deg);
+}
+
+/*신청서 양식*/
+.form-container {
+    position: relative;
+    max-width: 800px;
+    min-width: 430px;
+    width: 75%;
+    height: 1085px;
+    margin: auto;
+    padding: 8px 0 20px 0;
+    background-color: #fff;
+    border: 1px solid #aeaeae;
+    box-shadow: 0px 0px 3px #777;
+}
+
+#title {
+    padding: 0px;
+    font-size: 25px;
+}
+
+#description {
+    margin: 0;
+    padding: 10px 0 6px 0;
+    border-top: 1px dashed #d5d5d5;
+    border-bottom: 1px dashed #d5d5d5;
+    background-image: linear-gradient(to right, #e9fcff, #f3f3f3, #ffebe2);
+    font-size: 17px;
+    line-height: 1.7em;
+}
+
+/*신청양식-그리드*/
+#survey-form {
+    width: 97.5%;
+    height: auto;
+    margin: 1.5% auto;
+    border: 0px dashed #d5d5d5;
+}
+
+.form-boxs {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6px;
+    grid-template-rows: 300px 315px 200px;
+}
+
+.sub-description {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 13px;
+    background-image: linear-gradient(to right, #f3f3f3, #f3f3f3);
+}
+
+.boxset {
+    padding-bottom: 20px;
+    border: 1px solid #d5d5d5;
+}
+
+.left-side {
+    display: inline-block;
+    margin-bottom: 25px;
+    min-width: 39%;
+    text-align: right;
+}
+
+.right-side {
+    display: inline-block;
+    min-width: 60%;
+    text-align: left;
+}
+
+ul {
+    margin-top: 2px;
+    padding-bottom: 0;
+    list-style: none;
+}
+
+li {
+    margin-left: -40px;
+    line-height: 2em;
+}
+
+.input-field {
+    width: 140px;
+    height: 28px;
+    margin: 0 0 0 4px;
+    padding: 0 8px;
+    border: 1px solid #aeaeae;
+    font-size: 14px;
+    color: #333;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: 2.5px dotted #afafaf;
+    outline-offset: 2px;
+}
+
+input::placeholder {
+    color: #aeaeae
+}
+
+select {
+    width: 150px;
+    height: 28px;
+    font-size: 14px;
+    margin-left: 3px;
+}
+
+#game-entry-label {
+    vertical-align: 90px;
+}
+
+.secondRowBoxes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 6px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+#babycare {
+    margin-bottom: 49px;
+}
+
+.userOpinion{
+    grid-column: 1 / 3;
+}
+
+#opinion-label {
+    vertical-align: 76px;
+}
+
+.opinion {
+    resize: none;
+    width: 65%;
+    height: 80px;
+    padding: 5px;
+    margin: 0 0 0 4px;
+    border: 1px solid #aeaeae;
+    font-size: 14px;
+    color: #333;
+}
+
+#submit {
+    width: 120px;
+    margin-top: 40px;
+    padding: 15px;
+    background-color: rgb(252, 175, 140, 0.8);
+    border: 1px dotted #d5d5d5;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+}
+
+#submit:hover {
+    background-color: rgb(252, 175, 140, 1.0);
+}
+
+footer {
+    margin: 80px 0 0 0;
+    padding: 15px;
+    border-top: 1px dotted #d5d5d5;
+    background-image: linear-gradient(to right, #e9fcff, #f3f3f3, #ffebe2);
+    color: #555;
+    letter-spacing: 3px;
+}
+
+@media screen and (max-width: 1170px) {
+    body { 
+        padding: 355px 0 0 0;
+    }
+
+    .form-container {
+        height: 1785px;
+    }
+
+    .popup {
+        top: -10%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+
+    .popup-bg {
+        top: -10%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -100px;
+    }
+
+    .left-side {
+        min-width: 29%;
+        display: inline-block;
+        text-align: right;
+    }
+
+    .right-side {
+        min-width: 50%;
+        display: inline-block;
+        text-align: left;
+    }
+
+    .form-boxs {
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 6px;
+        grid-template-rows: 245px 285px 726px 0 0 245px;
+    }  
+
+    .user-info {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .game-entry {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+    }
+
+    .secondRowBoxes {
+        display: inline-block;
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    .userBestTheme {
+        grid-column: 1 / 3;
+        grid-row: 3 / 4;
+    }
+
+    #bestTheme-label {
+        vertical-align: 120px;
+    }
+
+    .userTeam {
+        margin-top: 6px;
+        grid-column: 1 / 3;
+        grid-row: 4 / 5;
+    }
+
+    #team-label {
+        vertical-align: 119px;
+    }
+
+    .userService {
+        margin-top: 6px;
+        grid-column: 1 / 3;
+        grid-row: 5 / 6;
+    }
+
+    #babycare {
+        margin-bottom: 30px;
+    }
+
+    .userOpinion {
+        grid-column: 1 / 3;
+        grid-row: 6 / 7 ;
+    }
+
+    .userOpinion .left-side {
+        margin-bottom: 0;
+        padding: 0;
+        display: block;
+        text-align: center;
+    }
+
+    .userOpinion .right-side {
+        display: block;
+        text-align: center;
+    }
+
+    .opinion {
+        min-width: 300px;
+        width: 60%;
+        position: relative;
+        top: -55px;
+    }
+}
+  
+    
